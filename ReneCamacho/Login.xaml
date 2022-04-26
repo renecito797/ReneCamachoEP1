@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReneCamacho.MainPage">
+
+    <StackLayout>
+        
+            <Label Text="BIENVENIDO SISTEMA DE PAGOS"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" HeightRequest="300" />
+       
+
+        <Entry x:Name="txtUsuario" Placeholder="USUARIO"></Entry>
+        <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True"></Entry>
+        <Button x:Name="btn" Text="ABRIR" Clicked="btn_Clicked"></Button>
+
+    </StackLayout>
+
+</ContentPage>

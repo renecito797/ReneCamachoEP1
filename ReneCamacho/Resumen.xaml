@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReneCamacho.Resumen">
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0">
+
+            <Label Text="Resumen"
+                   HorizontalOptions="Center"
+                   FontSize="Title" BackgroundColor="SteelBlue" TextColor="GhostWhite"/>
+
+            <Label></Label>
+
+            <Label x:Name="lblUsuario" FontSize="Large" BackgroundColor="Blue" TextColor="GhostWhite" HorizontalOptions="Center"/>
+
+            <Label></Label>
+
+            <Grid  Margin="2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+               
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre del Estudiante" FontSize="Large" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1" Placeholder="Nombre y Apellido" VerticalOptions="Center"  Keyboard="Text" IsEnabled="False" FontAttributes="Bold" ></Entry>
+
+            </Grid>
+
+            <Label Text="Cuotas" FontSize="Large" HorizontalOptions="Center" BackgroundColor="Blue" TextColor="GhostWhite"/>
+
+            <Label></Label>
+
+            <Grid  Margin="2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Total a Pagar" FontSize="Large" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtTotalPagar" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Keyboard="Numeric" IsEnabled="False" FontAttributes="Bold"></Entry>
+
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
